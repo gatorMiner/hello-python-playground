@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "A minimal Python Hello World playground"
 readme = "README.md"
 license = {file = "LICENSE"}
-authors = [{name = "Your Name", email = "you@example.com"}]
+authors = [{name = "gatorMiner", email = "gatorMiner@outlook.com"}]
 requires-python = ">=3.8"
 
 [tool.pytest]
