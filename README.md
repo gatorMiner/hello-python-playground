@@ -97,6 +97,28 @@ Notes
 - If `python` points to the Microsoft Store stub, install CPython from https://www.python.org/ and choose “Add Python to PATH”.
 - The project is installed in editable mode so changes in `src/playground` are reflected immediately when running tests.
 
+## Contributing
+
+Thanks for wanting to contribute — this is a small learning playground so we keep things simple.
+
+- Run the Makefile targets locally to prepare and test changes:
+   - `make venv` — create `.venv` and upgrade packaging tools
+   - `make install` — install the package in editable mode and `pytest`
+   - `make test` — run the test suite
+- Create a feature branch locally, e.g. `git checkout -b feat/my-change`.
+- Make small, focused commits and run `make test` before pushing.
+- Push the branch and open a Pull Request on GitHub. Use the web UI or `gh`:
+
+```powershell
+# push new branch and open a PR
+git push -u origin feat/my-change
+gh pr create --fill
+```
+
+- Keep PRs small. When your tests pass and at least one reviewer approves, merge into `main`.
+
+We intentionally avoid heavy admin rules here — the CI will run tests on push and PRs, but merging is lightweight so you can iterate quickly.
+
 ## Creating and pushing a new GitHub repo (PowerShell script)
 
 This repository includes a helper PowerShell script `create_and_push_with_gh.ps1` to create a GitHub repository from the current folder and push the code, intended to be run from Windows PowerShell when the folder is a standalone project root.
