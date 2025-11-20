@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hello-python-playground"
+version = "0.1.0"
+description = "A minimal Python Hello World playground"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [{name = "Your Name", email = "you@example.com"}]
+requires-python = ">=3.8"
+
+[tool.pytest]
+minversion = "6.0"
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 88
